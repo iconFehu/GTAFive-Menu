@@ -24,7 +24,7 @@ namespace big
 			if (event_arg_count != previous_arg_count)
 			{
 				int64_t* temp_args = new int64_t[event_arg_count]{0};
-				memcpy(temp_args, args, sizeof(int64_t) * std::min(event_arg_count, previous_arg_count));
+				memcpy(temp_args, args, sizeof(int64_t) * std::min<>(event_arg_count, previous_arg_count));
 
 				delete[] args;
 				args = temp_args;

@@ -54,7 +54,7 @@ namespace big
 				if (offset_count != previous_offset_count)
 				{
 					int(*new_offsets)[2] = new int[offset_count][2]{0};
-					memcpy(new_offsets, offsets, sizeof(int) * std::min(offset_count, previous_offset_count) * 2);
+					memcpy(new_offsets, offsets, sizeof(int) * std::min<>(offset_count, previous_offset_count) * 2);
 
 					delete[] offsets;
 					offsets = new_offsets;

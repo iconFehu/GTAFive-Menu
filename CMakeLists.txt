@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 set(CMAKE_TOOLCHAIN_FILE $ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
 set(VCPKG_TARGET_TRIPLET x64-windows-static-md)
 project(YimMenu)
+enable_language(ASM_MASM)
 
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 
