@@ -34,3 +34,10 @@
 /vcpkg
 /builds
 .DS_Store
+
+# IDE
+.vs/
+.vscode/
+.cache/
+.idea/
+./out/
