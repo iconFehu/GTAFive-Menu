@@ -1,9 +1,21 @@
 {
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
   "name": "main",
   "version-string": "latest",
   "dependencies": [
     "fmt",
     "boost-config",
-    "sqlite3"
+    "sqlite3",
+    "cpr",
+    {
+      "name": "imgui",
+      "features": [
+        "dx11-binding",
+        "win32-binding"
+      ]
+    },
+    "minhook",
+    "opencv4",
+    "pugixml"
   ]
 }
